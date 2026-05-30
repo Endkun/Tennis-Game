@@ -30,8 +30,6 @@ public class RacketFaceHit2 : MonoBehaviour
                 ballRb.AddForce(shotDirection.normalized * hitPower, ForceMode.Impulse);
 
                 Debug.Log("フェイス（面）で綺麗に打ち返しました！");
-                // 打ち返した瞬間に、ボールのPlayerHanteiスクリプトを見つけて「俺が打った！」と上書きする
-                collision.gameObject.GetComponent<PlayerHantei>().lastHitter = PlayerHantei.LastHitter.Enemy;
             }
         }
     }
